@@ -1,0 +1,29 @@
+{
+    "name": "etconsilium/php-json-fix"
+    ,"description": "Proxy json_decode() and Fix invalid JSON (via runkit)"
+    ,"tags": ["php_for_food", "json_decode", "hack", "json", "runkit", "ищу работу"]
+    ,"keywords": ["require runkit", "fix ivalid json"]
+    ,"license": "BSDL"
+    ,"copyright": "(cc-by-nc)"
+    ,"version": "1.0.101"
+    ,"require": {
+        "php":">5.5"
+    }
+    ,
+    "autoload": {
+        "psr-0": { "": "" },
+        "files": ["json-clearfix.php"]
+    }
+    ,
+    "scripts": {
+        "pre-package-install": [
+            "php -r \"system('pre-install.sh');\""
+        ]
+    }
+    ,
+    "authors": [{
+        "name": "Vlad",
+        "email": "v.koltsov@gmail.com"
+    }]
+
+}
