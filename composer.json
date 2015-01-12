@@ -5,7 +5,7 @@
     ,"keywords": ["require runkit", "fix ivalid json"]
     ,"license": "BSDL"
     ,"copyright": "(cc-by-nc)"
-    ,"version": "1.0.101"
+    ,"version": "1.0.110"
     ,"require": {
         "php":">5.5"
     }

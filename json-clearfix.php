@@ -6,7 +6,7 @@ runkit_function_remove('json_decode');
 
 if (!(function_exists('json_decode') || is_callable('json_decode')) ) {	//	без проверки транслятор генерирует ошибку на первом проходе
     function json_decode($json, $assoc=false, $depth=512, $options=JSON_BIGINT_AS_STRING){
-    	
+
     	//		http://php.net/manual/ru/function.json-decode.php#112735
     	//	comments
     	$json = preg_replace('~(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|([\s\t]//.*)|(^//.*)~', '', $json);
@@ -41,7 +41,7 @@ if (!(function_exists('json_decode') || is_callable('json_decode')) ) {	//	бе�
                 throw new RuntimeException('Decoding failed: Syntax error');
                 break;
             default:
-                throw new RuntimeException('Decoding error message: '.json_​last_​error_​msg());
+                throw new RuntimeException('Decoding error message: '.json_last_error_msg());
                 break;
         }
         return null;
@@ -69,7 +69,7 @@ if (!(function_exists('json_encode') || is_callable('json_encode')) ) {
                 throw new RuntimeException('Decoding failed: Syntax error');
                 break;
             default:
-                throw new RuntimeException('Decoding error message: '.json_​last_​error_​msg());
+                throw new RuntimeException('Decoding error message: '.json_last_error_msg());
                 break;
         }
         return null;
