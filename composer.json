@@ -3,7 +3,7 @@
     ,"description": "Proxy json_decode() and Fix invalid JSON (via runkit)"
     ,"tags": ["php_for_food", "json_decode", "hack", "json", "runkit", "ищу работу"]
     ,"keywords": ["php_for_food", "json_decode", "hack", "json", "fix ivalid json"]
-    ,"license": "BSDL"
+    ,"license": "WTFPL"
     ,"copyright": "(cc-by-nc)"
     ,"version": "1.0.111"
     ,"require": {
